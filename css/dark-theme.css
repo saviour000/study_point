@@ -1,0 +1,40 @@
+body {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light gray text */
+}
+
+header {
+    background-color: #1e1e1e; /* Header background color */
+    padding: 15px 0; /* Padding for the header */
+}
+
+.card {
+    background: linear-gradient(145deg, #1e1e1e, #2a2a2a); /* Gradient background for cards */
+    border: none; /* No border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.card-title {
+    color: #ffffff; /* White text for card titles */
+}
+
+.btn-primary {
+    background-color: #6200ea; /* Purple button color */
+    border-color: #6200ea; /* Button border color */
+}
+
+.btn-primary:hover {
+    background-color: #3700b3; /* Darker purple on hover */
+    border-color: #3700b3; /* Darker border on hover */
+}
+
+.btn-success {
+    background-color: #27ae60; /* Green button color */
+    border-color: #27ae60; /* Button border color */
+}
+
+.btn-success:hover {
+    background-color: #2ecc71; /* Lighter green on hover */
+    border-color: #2ecc71; /* Lighter border on hover */
+}

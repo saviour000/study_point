@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materials</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: #121212; /* Dark background */
+            color: #e0e0e0; /* Light gray text */
+            padding-top: 70px; /* Space for fixed header */
+        }
+        header {
+            position: fixed; /* Fix the header at the top */
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #1e1e1e; /* Header background color */
+            padding: 15px 0; /* Padding for the header */
+            z-index: 1000; /* Ensure it stays above other content */
+        }
+        .subject-card {
+            background: linear-gradient(145deg, #1e1e1e, #2a2a2a); /* Gradient background for cards */
+            border: none; /* No border */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+            transition: transform 0.2s, box-shadow 0.2s; /* Animation on hover */
+        }
+        .subject-card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+        }
+        .subject-title {
+            font-size: 1.5rem; /* Larger font size for subject titles */
+        }
+        .btn-primary {
+            background-color: #6200ea; /* Purple button color */
+            border-color: #6200ea; /* Button border color */
+        }
+        .btn-primary:hover {
+            background-color: #3700b3; /* Darker purple on hover */
+            border-color: #3700b3; /* Darker border on hover */
+        }
+    </style>
+</head>
+<body>
+    <header class="text-center mb-4">
+        <h1 class="display-4">Study Point</h1>
+    </header>
+
+    <div class="container mt-5">
+        <section id="subjects" class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card subject-card">
+                    <div class="card-body text-center">
+                        <h2 class="subject-title"><a href="subject1.html" class="btn btn-primary btn-lg">Java</a></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card subject-card">
+                    <div class="card-body text-center">
+                        <h2 class="subject-title"><a href="subject2.html" class="btn btn-primary btn-lg">PHP</a></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card subject-card">
+                    <div class="card-body text-center">
+                        <h2 class="subject-title"><a href="subject3.html" class="btn btn-primary btn-lg">Software Engineering</a></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card subject-card">
+                    <div class="card-body text-center">
+                        <h2 class="subject-title"><a href="subject4.html" class="btn btn-primary btn-lg">Data Structure</a></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card subject-card">
+                    <div class="card-body text-center">
+                        <h2 class="subject-title"><a href="subject5.html" class="btn btn-primary btn-lg">ADBMS</a></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5. 1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
