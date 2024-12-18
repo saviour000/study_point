@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visitor Count</title>
+    <style>
+      /* Basic reset */
+      body, h1, p {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Body styles */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+      }
+
+      /* Heading styles */
+      h1 {
+        color: #4CAF50;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      /* Visitor Count Section styles */
+      #visitorCount {
+        display: none;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+      }
+
+      /* Link styles */
+      a {
+        color: #4CAF50;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Our Website</h1>
+
+    <!-- Visitor Count Section -->
+    <div id="visitorCount">
+      <script
+        type="text/javascript"
+        src="https://www.free-counters.org/count/gv8y"
+      ></script>
+      <br />
+      <a href="https://www.easybooking.eu/">Hotel Software</a>
+      <script
+        type="text/javascript"
+        src="https://www.whomania.com/ctr?id=185badbd838ceca1fa5e54419df9c0d77a2fc00b"
+      ></script>
+    </div>
+
+    <script>
+      // Simple admin access prompt
+      var password = prompt("Enter admin password to view visitor statistics:");
+      if (password === "abc") {
+        // Replace 'yourAdminPassword' with your actual password
+        document.getElementById("visitorCount").style.display = "block"; // Show the visitor count
+      } else {
+        alert(
+          "Incorrect password. You do not have access to view visitor statistics."
+        );
+      }
+    </script>
+  </body>
+</html>
