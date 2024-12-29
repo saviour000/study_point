@@ -28,14 +28,32 @@
             margin-top: auto; 
             width: 100%; 
         }
-               .subject-card {
-            background-color: #ffffff;
-            border-radius: 8px; 
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-            padding: 20px;
-            margin-bottom: 20px; 
-            text-align: center; 
+        .subject-title {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    margin: 0;
         }
+
+        .subject-card {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    height: 100%; 
+}
+
+            @media (min-width: 768px) {
+    .subject-card {
+        margin-bottom: 20px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .subject-card {
+        margin-bottom: 15px; 
+    }
+}
 
     </style>
 </head>
