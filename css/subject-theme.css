@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background */
+    color: #343a40; /* Dark text color */
+}
+
+/* Header Styles */
+header {
+    background-color: #343a40; /* Dark background for header */
+    color: white; /* White text */
+    padding: 20px 0; /* Padding for header */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+}
+
+/* Units Section */
+#units {
+ margin-top: 30px; /* Margin for units section */
+}
+
+#units h2 {
+    font-size: 2rem; /* Font size for units heading */
+    margin-bottom: 20px; /* Margin below heading */
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid #ced4da; /* Light border for cards */
+    border-radius: 0.5rem; /* Rounded corners */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Font size for card titles */
+    font-weight: bold; /* Bold titles */
+}
+
+.card-body {
+    padding: 20px; /* Padding inside card body */
+}
+
+/* Button Styles */
+.btn-success {
+    background-color: #28a745; /* Green background for success buttons */
+    border-color: #28a745; /* Border color */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Darker green on hover */
+    border-color: #1e7e34; /* Darker border on hover */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Blue background for primary buttons */
+    border-color: #007bff; /* Border color */
+}
+
+.btn-primary:hover {
+    background-color: #0069d9; /* Darker blue on hover */
+    border-color: #0062cc; /* Darker border on hover */
+}
+
+/* Footer Styles */
+.text-center {
+    margin-top: 40px; /* Margin for centered text */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px; /* Margin for cards on smaller screens */
+    }
+}

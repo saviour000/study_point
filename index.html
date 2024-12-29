@@ -1,77 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Under Maintenance</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Point - Materials</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <style>
-    @keyframes fadeIn {
-    from {
+      body {
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        max-height: 100vh;
+        /* overflow: hidden; */
+      }
+
+      h1 {
+        color: #f4f4f4;
+      }
+      header {
+        background-color: #11131e;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .slider {
+        background-color: #11131e;
+        position: relative;
+        height: 50px;
+        margin-top: 10px;
+        overflow: hidden;
+      }
+      .slider-text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
+        transition: opacity 1s ease-in-out;
+      }
+      .slider-text.active {
         opacity: 1;
-        transform: translateY(0);
-    }
-}
+      }
+      .semester-box {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+      }
+      footer {
+        background-color: #11131e;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        /* bottom: 0; */
+        width: 100%;
+        z-index: 1000;
+      }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
+      @media (max-width: 768px) {
+        .feedback-button {
+          width: 50px;
+          height: 50px;
+          font-size: 14px;
+          bottom: 20px;
+          right: 20px;
+        }
+      }
 
-body {
-    background-color: #f4f4f4;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-}
+      @media (max-width: 480px) {
+        .feedback-button {
+          width: 45px; 
+          height: 45px; 
+          font-size: 12px; 
+        }
+      }
 
-h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    animation: fadeIn 1s ease-in-out;
-}
+      .feedback-button {
+        position: fixed;
+        bottom: 80px; 
+        right: 20px; 
+        width: 60px; 
+        height: 60px; 
+        background-color: #007bff; 
+        color: white; 
+        border-radius: 50%; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        cursor: pointer; 
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        font-size: 12px; 
+        z-index: 1000; 
+      }
 
-p {
-    font-size: 20px;
-    margin-bottom: 30px;
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-.btn {
-    background-color: #6200ea;
-    color: white;
-    animation: pulse 1.5s infinite;
-}
-
-.btn:hover {
-    background-color: #3700b3;
-}
+      .feedback-button:hover {
+        background-color: #0056b3; 
+      }
     </style>
-</head>
-<body>
-    <div>
-        <h1>We'll Be Back Soon!</h1>
-        <p>Our website is currently undergoing maintenance. We are working hard to improve your experience.</p>
-        <p>Thank you for your patience!</p>
-      
+  </head>
+  <body>
+    <header>
+      <h1>Study Point</h1>
+    </header>
+    <!-- <div class="slider">
+            <div class="slider-text active">Your one-stop destination for all study materials</div>
+            <div class="slider-text">Your gateway to academic success</div>
+            <div class="slider-text">Explore a variety of resources</div>
+        </div> -->
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Study Point</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Sem_1/sem1.html">Semester 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Sem_2/sem2.html">Semester 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Semester 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Semester 4</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="semester-box">
+            <h2>Sem 1</h2>
+            <a href="Sem_1/sem1.html" class="btn btn-primary">View Materials</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="semester-box">
+            <h2>Sem 2</h2>
+            <a href="Sem_2/sem2.html" class="btn btn-primary">View Materials</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="semester-box">
+            <h2>Sem 3</h2>
+            <a href="Sem_3/sem3.html" class="btn btn-primary">View Materials</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="semester-box">
+            <h2>Sem 4</h2>
+            <a href="Sem_4/sem4.html" class="btn btn-primary">View Materials</a>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Feedback Button -->
+    <div
+      class="feedback-button"
+      data-toggle="modal"
+      data-target="#feedbackModal"
+    >
+      <span>Feedback</span>
+    </div>
+
+    <!-- Feedback Modal -->
+    <div
+      class="modal fade"
+      id="feedbackModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="feedbackModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="feedbackModalLabel">Feedback Form</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form
+              id="feedbackForm"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <div class="form-group">
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="3f819c56-aa48-4a7e-bb79-b4a9379c2d6c"
+                />
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="suggestion">Suggestion</label>
+                <textarea
+                  name="message"
+                  class="form-control"
+                  id="suggestion"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>For educational purpose only</p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+    <script>
+      const slides = document.querySelectorAll(".slider-text");
+      let currentSlide = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.remove("active");
+          if (i === index) {
+            slide.classList.add("active");
+          }
+        });
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      setInterval(nextSlide, 3000);
+
+      document
+        .getElementById("feedbackForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var formData = new FormData(this);
+
+          fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.success) {
+                alert("Feedback submitted! Thank you.");
+                $("#feedbackModal").modal("hide");
+              } else {
+                alert(
+                  "There was an error submitting your feedback. Please try again."
+                );
+              }
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              alert(
+                "There was an error submitting your feedback. Please try again."
+              );
+            });
+        });
+    </script>
+  </body>
 </html>
