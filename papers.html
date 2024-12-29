@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f0f0; /* Light background */
+            font-family: 'Arial', sans-serif; /* Font style */
+        }
+        header {
+            background-color: #11131e; 
+            color: white; 
+            padding: 20px 0; 
+            text-align: center; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for header */
+        }
+        .card {
+            border: none; /* Remove default border */
+            border-radius: 15px; /* Rounded corners */
+            background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Gradient background */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+        }
+        .card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+        }
+        .card-title {
+            color: #11131e; /* Dark color for titles */
+            font-weight: bold; /* Bold titles */
+        }
+        .btn-success {
+            background-color: #28a745; /* Green button color */
+            border: none; /* Remove border */
+            transition: background-color 0.3s; /* Transition for button */
+        }
+        .btn-success:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+        .container {
+            margin-top: 30px; /* Margin for container */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Papers</h1>
+    </header>
+
+    <div class="container mt-5">
+        <section id="papers">
+            <div class="row">
+                <!-- Mid-Term Papers -->
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Mid-Term Papers</h5>
+                            <p>Access previous Mid-Term exam papers for practice.</p>
+                            <a href="https://drive.google.com/drive/folders/1OoAOwySzFcHu8P71_WZaM73xvtBiXubM?usp=drive_link" class="btn btn-success" download>Download PDF</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End-Semester Papers -->
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">End-Semester Papers</h5>
+                            <p>Access previous End-Semester exam papers for practice.</p>
+                            <a href="https://drive.google.com/drive/folders/1S8gNvKL_nigk3y4J34WMxGCePFFCVvTA?usp=drive_link" class="btn btn-success" download>Download PDF</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
