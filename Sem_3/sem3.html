@@ -25,17 +25,41 @@
             color: white; 
             text-align: center;
             padding: 10px 0; 
-            margin-top: auto; /* Push footer to the bottom */
-            width: 100%; /* Full width footer */
+            margin-top: auto; 
+            width: 100%; 
         }
         .subject-card {
-            background-color: #ffffff; 
-            border-radius: 8px; 
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-            padding: 20px; 
-            margin-bottom: 20px; 
-            text-align: center;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+      }
+
+      .subject-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+      }
+
+      @media (min-width: 768px) {
+        .subject-card {
+          margin-bottom: 20px;
         }
+      }
+
+      @media (max-width: 576px) {
+        .subject-card {
+          margin-bottom: 15px;
+        }
+      }
 
     </style>
 </head>
