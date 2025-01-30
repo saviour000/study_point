@@ -1,156 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semester 1</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
+  <head>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://img.icons8.com/?size=100&id=INcxb9GXWSZs&format=png&color=000000"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semester 2</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
     <style>
-        body {
-            background-color: #f4f4f4; 
-            color: #333; 
-            min-height: 100vh; 
-            display: flex;
-            flex-direction: column;
-        }
-        header {
-            background-color: #11131e; 
-            color: white; 
-            padding: 5px 0; 
-            text-align: center; 
-        }
-        footer {
-            background-color: #11131e; 
-            color: white; 
-            text-align: center; 
-            padding: 10px 0; 
-            margin-top: auto; 
-            width: 100%; 
-        }
-        .subject-title {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 100%; 
-    margin: 0;
-        }
+      body {
+        background-color: #f4f4f4;
+        color: #333;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        background-color: #11131e;
+        color: white;
+        padding: 5px 0;
+        text-align: center;
+      }
+      footer {
+        background-color: #11131e;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: auto;
+        width: 100%;
+      }
+      .subject-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+      }
 
+      .subject-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+      }
+
+      @media (min-width: 768px) {
         .subject-card {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    height: 100%; 
-}
+          margin-bottom: 20px;
+        }
+      }
 
-            @media (min-width: 768px) {
-    .subject-card {
-        margin-bottom: 20px; 
-    }
-}
-
-@media (max-width: 576px) {
-    .subject-card {
-        margin-bottom: 15px; 
-    }
-}
-
+      @media (max-width: 576px) {
+        .subject-card {
+          margin-bottom: 15px;
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Semester 2</h1>
+      <h1>Semester 2</h1>
     </header>
-<!-- ------------------------------------NavBar------------------------------------------------------------------------ -->
+    <!-- ------------------------------------NavBar------------------------------------------------------------------------ -->
+    <!-- First Navbar (Elective - 1) -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Elective - 1</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="ai.html">Artificial Intelligence - I</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="csf.html">Cyber Security and Forensics - I</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="fsw.html">Full Stack Web Developer - I</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="bda.html">Big Data Analytics - I</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cc.html">Cloud Computing - I</a>
-                </li>
-            </ul>
-        </div>
+      <a class="navbar-brand" href="#">Elective - 1</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav1"
+        aria-controls="navbarNav1"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav1">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="ai.html">Artificial Intelligence - I</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="csf.html"
+              >Cyber Security and Forensics - I</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fsw.html">Full Stack Web Developer - I</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bda.html">Big Data Analytics - I</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cc.html">Cloud Computing - I</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Second Navbar (Time Table) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Time Table</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav2"
+        aria-controls="navbarNav2"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav2">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/Sem_2/TimeTable/A.png">Division - A</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Sem_2/TimeTable/B.png">Division - B</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Sem_2/TimeTable/C.png">Division - C</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Sem_2/TimeTable/D.png">Division - D</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Sem_2/TimeTable/E.png">Division - E</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Sem_2/TimeTable/F.png">Division - F</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Sem_2/TimeTable/G.png">Division - G</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Sem_2/TimeTable/H.png">Division - H</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Sem_2/TimeTable/I.png">Division - I</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Sem_2/TimeTable/J.png">Division - J</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Sem_2/TimeTable/K.png">Division - K</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- ------------------------------------------------------------------------------------- -->
     <div class="container mt-5 flex-grow-1">
-        <section id="subjects" class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card subject-card">
-                    <div class="card-body text-center">
-                        <h2 class="subject-title"><a href="subject1.html" class="btn btn-primary btn-lg">Advanced Java Programming</a></h2>
-                    </div>
-                </div>
+      <section id="subjects" class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card subject-card">
+            <div class="card-body text-center">
+              <h2 class="subject-title">
+                <a href="subject1.html" class="btn btn-primary btn-lg"
+                  >Advanced Java Programming</a
+                >
+              </h2>
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-4 mb-4">
-                <div class="card subject-card">
-                    <div class="card-body text-center">
-                        <h2 class="subject-title"><a href="subject2.html" class="btn btn-primary btn-lg">Data Communications and Networking</a></h2>
-                    </div>
-                </div>
+        <div class="col-md-4 mb-4">
+          <div class="card subject-card">
+            <div class="card-body text-center">
+              <h2 class="subject-title">
+                <a href="subject2.html" class="btn btn-primary btn-lg"
+                  >Data Communications and Networking</a
+                >
+              </h2>
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-4 mb-4">
-                <div class="card subject-card">
-                    <div class="card-body text-center">
-                        <h2 class="subject-title"><a href="subject3.html" class="btn btn-primary btn-lg">Computer Graphics</a></h2>
-                    </div>
-                </div>
+        <div class="col-md-4 mb-4">
+          <div class="card subject-card">
+            <div class="card-body text-center">
+              <h2 class="subject-title">
+                <a href="subject3.html" class="btn btn-primary btn-lg"
+                  >Computer Graphics</a
+                >
+              </h2>
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-4 mb-4">
-                <div class="card subject-card">
-                    <div class="card-body text-center">
-                        <h2 class="subject-title"><a href="subject4.html" class="btn btn-primary btn-lg">Comprehensive Assesment</a></h2>
-                    </div>
-                </div>
+        <div class="col-md-4 mb-4">
+          <div class="card subject-card">
+            <div class="card-body text-center">
+              <h2 class="subject-title">
+                <a href="subject4.html" class="btn btn-primary btn-lg"
+                  >Comprehensive Assesment</a
+                >
+              </h2>
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-4 mb-4">
-                <div class="card subject-card">
-                    <div class="card-body text-center">
-                        <h2 class="subject-title"><a href="subject5.html" class="btn btn-primary btn-lg">Seminar</a></h2>
-                    </div>
-                </div>
+        <div class="col-md-4 mb-4">
+          <div class="card subject-card">
+            <div class="card-body text-center">
+              <h2 class="subject-title">
+                <a href="subject5.html" class="btn btn-primary btn-lg"
+                  >Seminar</a
+                >
+              </h2>
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-4 mb-4">
-                <div class="card subject-card">
-                    <div class="card-body text-center">
-                        <h2 class="subject-title"><a href="subject6.html" class="btn btn-primary btn-lg">English and Mathematical Aptitude</a></h2>
-                    </div>
-                </div>
+        <div class="col-md-4 mb-4">
+          <div class="card subject-card">
+            <div class="card-body text-center">
+              <h2 class="subject-title">
+                <a href="subject6.html" class="btn btn-primary btn-lg"
+                  >English and Mathematical Aptitude</a
+                >
+              </h2>
             </div>
-
-
-        </section>
+          </div>
+        </div>
+      </section>
     </div>
 
-
-
     <footer>
-        <p>For educational purpose only</ p>
+      <p>For educational purpose only</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+
+    <script>
+      // Custom Script to close the other navbar when one is expanded
+      $(document).ready(function () {
+        $(".navbar-toggler").click(function () {
+          var targetId = $(this).attr("data-target");
+          $(".navbar-collapse").not(targetId).collapse("hide");
+        });
+      });
+    </script>
+  </body>
 </html>
