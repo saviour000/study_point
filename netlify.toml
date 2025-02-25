@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/*"
-  to = "https://your-vercel-site.vercel.app/"
+  to = "https://pu-vault.vercel.app/"
   status = 301
   force = true
